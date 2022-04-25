@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HR management system </title>
 
-    <link rel="icon" type="image/x-icon"  href="./Pictures/hr-logo-design.jpg">
+    <link rel="icon" type="image/x-icon"  href="./picture/hr logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>   
@@ -17,11 +17,19 @@ header{
     } 
 
 footer{
-    margin-top: 50%;
+    margin-top: 17%;
     text-align: center;
     background-color: aqua;
 } body{
     background-color: rgb(203, 177, 228);
+}
+main table th {
+    border:0.5em solid black;
+    background-color: brown;
+}
+main table td {
+    border: 0.5em solid black;
+    background-color: aliceblue;
 }
 </style>
 
@@ -33,7 +41,7 @@ footer{
     <header> 
         <table width="75%"> 
           <tr> 
-              <th><img src="./images/hr-logo-design.jpg" alt="..." width="50" height="40" >  <b style="font-size: xx-large;"> HR management system </b> 
+              <th><img src="./picture/hr logo.png" alt="..." width="50" height="40" >  <b style="font-size: xx-large;"> HR management system </b> 
                  
           </th> 
   
@@ -56,8 +64,61 @@ footer{
       </header> <br>
   
 
-<main></main>
+<main>
+    <table id="tableId">
+            
+    </table>
 
+    <table id="tableId">
+        <tr>
+            <th>Department</th>
+            <th># of employees</th>
+            <th>Total Salary</th>
+            <th>Average</th>
+        </tr>
+        <tr>
+            <th>Administration</th>
+            <td id="administrationNum"></td>
+            <td id="administrationSalary"></td>
+            <td id="administrationAverage"></td>
+
+        </tr>
+        <tr>
+            <th>Marketing</th>
+            <td id="marketingNum"></td>
+            <td id="marketingSalary"></td>
+            <td id="marketingAverage"></td>
+
+        </tr>
+        <tr>
+            <th>Development</th>
+            <td id="developmentNum"></td>
+            <td id="developmentSalary"></td>
+            <td id="developmentAverage"></td>
+
+        </tr>
+        <tr>
+            <th>Finance</th>
+            <td id="financeNum"></td>
+            <td id="financeSalary"></td>
+            <td id="financeAverage"></td>
+
+        </tr>
+        <tr>
+            <th rowspan="2">Total</th>
+            <th>Total number of employees</th>
+            <th>Total salary for all departments</th>
+            <th>Average salary for all departments</th>
+        </tr>
+        <tr>
+            <td id="totalNum"></td>
+            <td id="totalSalary"></td>
+            <td id="totalAverage"></td>
+        </tr>
+    </table>
+    <script src="./JS/app.js"></script>
+
+</main>
 
 <footer>
     <a href="#" class="fa fa-twitter">
