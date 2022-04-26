@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HR management system </title>
 
-    <link rel="icon" type="image/x-icon"  href="./picture/hr logo.png">
+    <link rel="icon" type="image/x-icon"  href="./images/hr-logo-design.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>   
@@ -44,7 +44,7 @@ script{
     <header> 
         <table width="75%"> 
           <tr> 
-              <th><img src="./picture/hr logo.png" alt="..." width="50" height="40" >  <b style="font-size: xx-large;">HR management system </b> 
+              <th><img src="./images/hr-logo-design.jpg" alt="..." width="50" height="40" >  <b style="font-size: xx-large;">HR management system </b> 
                  
           </th> 
   
@@ -73,7 +73,7 @@ script{
             <form id="newCard">
                 <label for=" fullName">Full name:</label><br>
                 <input type="text" id="fullName" name="fullName" ><br>
-                <label for="department">your department:</label><br>
+                <label for="department"> your department:</label><br>
                 <select name="department" id="department">
                     <option value="Administration">Administration</option>
                     <option value="marketing">marketing</option>
@@ -87,13 +87,15 @@ script{
                     <option value="Senior">Senior</option>
                 </select><br>
                 <label for="newImg"> Image:</label><br>
-                <input type="file" id="newImg" name="newImg"><br><br>
+                <input type="text" id="newImg" name="newImg" placeholder="Image url"><br>
                 <input id="btn" type="submit" value="Submit">
             </form>
                 <div id="oldCard">
 
                 </div> 
         </div>
+
+
         <br><br><br>
         <script src="./JS/app.js"></script>
   
